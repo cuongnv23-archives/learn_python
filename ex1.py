@@ -14,4 +14,4 @@ def max(a, b):
     else:
         return b
 
-print "Max number: %d" % max(int(num_1), int(num_2))
+print "Max number: ", max(int(num_1), int(num_2))
