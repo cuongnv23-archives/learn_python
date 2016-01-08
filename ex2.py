@@ -3,6 +3,10 @@
 #
 #!/usr/bin/python
 
+from sys import argv
+
+script, num_1, num_2, num_3 = argv
+
 def max_of_three(a, b, c):
     max = a
     if b > max and b > c:
@@ -13,8 +17,4 @@ def max_of_three(a, b, c):
         max = c
     return max
 
-num_1 = raw_input('Num1: ')
-num_2 = raw_input('Num2: ')
-num_3 = raw_input('Num3: ')
-
-print "The largest one: ", max_of_three(int(num_1), int(num_2), int(num_3))
+print "Max of three: ", max_of_three(int(num_1), int(num_2), int(num_3))
