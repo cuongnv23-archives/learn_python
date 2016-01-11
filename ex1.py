@@ -2,6 +2,13 @@
 #Use the if-then-else construct #available in Python.
 #(It is true that Python has the max() function built in, but writing it yourself is nevertheless a good #exercise.)
 
+# How to run:
+# $ python ex1.py number1 number2
+# Ex:
+# $ python ex1.py 123 455
+# Max number:  455
+
+
 #!/usr/bin/python
 
 from sys import argv

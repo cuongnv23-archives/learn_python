@@ -1,6 +1,15 @@
 #
 #Define a function max_of_three() that takes three numbers as arguments and returns the largest of them.
 #
+
+# How to run:
+# $ python ex1.py number1 number2 number3
+# Ex:
+# $ python ex2.py 3341 33 1
+# Max of three:  3341
+
+
+
 #!/usr/bin/python
 
 from sys import argv
