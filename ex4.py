@@ -19,4 +19,4 @@ def vowel_check(x):
 if __name__ == "__main__":
     script, check_char = argv
     check = vowel_check(check_char)
-    print "\"%s\" is vowel:" %(check_char), check
+    print "[+] \"%s\" is vowel:" %(check_char), check
