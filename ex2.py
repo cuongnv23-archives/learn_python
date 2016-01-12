@@ -6,24 +6,19 @@
 
 # Find out the maximum number from an array, used for integer only
 def max_of_number(a):
-    # Assign the first number is the maximum
+    # Force checking elements of input array. Thankful for Cuong_Nguyen
     try:
-        max = int(a[0])
+        a = [int(x) for x in a]
     except ValueError as msg:
         print("[!] Oops, invalid number input. \n\
 Message: %s" %(msg))
         exit()
-    # Checking for ther others
+    # Maximum finding
+    max = a[0]
     for num in a[1:]:
-        try:
-            num = int(num)
-        except ValueError as msg:
-            print("[!] Oops, invalid number input. \n\
-Message: %s" %(msg))
-            exit()
         if num > max:
             max = num
-    return max
+    return  max
 
 # The main function
 if __name__ == "__main__":
