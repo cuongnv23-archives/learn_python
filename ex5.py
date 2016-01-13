@@ -7,14 +7,14 @@
 # should return the string "tothohisos isos fofunon".
 #
 
-import ex4
+from ex4 import vowel_check
 from sys import argv
 
 def consonant_dup(input_str):
     input_str = str(input_str)
     output_str = ''
     for char in input_str:
-        if ex4.vowel_check(char):
+        if vowel_check(char):
            output_str += char
         else:
             output_str += 'o' + char + 'o'
