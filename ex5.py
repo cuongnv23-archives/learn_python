@@ -17,7 +17,7 @@ def consonant_dup(input_str):
         if vowel_check(char):
            output_str += char
         else:
-            output_str += 'o' + char + 'o'
+            output_str += char + 'o' + char
     return output_str
 
 if __name__ == '__main__':
