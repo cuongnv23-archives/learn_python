@@ -11,6 +11,8 @@ from sys import argv
 from ex7 import reverse
 
 def is_palindrome(input_string):
+    input_string = str.replace(input_string,' ','')
+    input_string = str.lower(input_string)
     if reverse(input_string) == input_string:
         return True
     else:

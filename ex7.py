@@ -24,5 +24,3 @@ if __name__ == '__main__':
         print '[+] Reverse: ', reverse(input_string)
     except ValueError as msg:
         print '[!] Oops, error: %s' %msg
-
-
