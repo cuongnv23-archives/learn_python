@@ -21,7 +21,11 @@ def histogram(array):
 if __name__ == '__main__':
     a = []
     for e in argv[1:]:
-        a.append(e)
+        try:
+            e = int(e)
+            a.append(e)
+        except ValueError as msg:
+            print '[!] Error, %s.' %msg
     print '[+] Histogram: '
     histogram(a)
 
