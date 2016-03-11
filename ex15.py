@@ -3,15 +3,15 @@
 #!/usr/bin/python
 
 def find_longest_word(st):
-    st = st.split(' ')
-    longest = st[0]
-    i = 0
-    while i < len(st):
-        if len(st[i]) > len(longest):
-            longest = st[i]
-        i = i + 1
+    st = st.split()
+    w = st[0]
+    longest = len(w)
+    for s in st:
+        if len(s) > longest:
+            longest = len(s)
+            w = s
 
-    return len(longest)
+    return w, longest
 
 st1 = raw_input('Enter list of words: ')
-print "Longest: ", find_longest_word(st1)
+print "Longest word:", find_longest_word(st1)
