@@ -10,7 +10,7 @@ def filter_long_words(n, list_of_words):
     result = []
     split_words = str(list_of_words).split()
     for e in split_words:
-        if len(e) > n:
+        if len(e) > n and e not in result:
             result.append(e)
     return result
 
