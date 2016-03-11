@@ -2,9 +2,8 @@
 #Write a function filter_long_words() that takes a list of words and an integer n and returns the list of words that are longer than n.
 
 def filter_long_words(st, n):
-    st = st.split(' ')
+    st = st.split()
     longer = []
-    #i = 0
     for i in st:
         if len(i) > int(n):
             longer.append(i)
