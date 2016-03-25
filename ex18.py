@@ -13,7 +13,7 @@ def pangram(s):
     words_list = s.split()
     chars_list = []
     for word in words_list:
-        for char in word[0:len(word)]:
+        for char in word:
             if char not in chars_list and char.isalpha():
                 chars_list.append(char.lower())
     if len(chars_list) == 26:
